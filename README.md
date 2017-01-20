@@ -1,5 +1,5 @@
 # cuda-single-page-portfolio
 
-DEMO: 
+DEMO: https://elosiktv.github.io/cuda-single-page-portfolio/
 
 PSD: http://graphicburger.com/cuda-single-page-portfolio-template/: 
