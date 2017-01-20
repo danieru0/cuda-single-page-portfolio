@@ -1,0 +1,67 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 600px;
+    background-color: #87509c;
+}
+
+nav {
+    width: 1035px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 59px;
+}
+
+ul {
+    display: inline;
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+.nav-options {
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.nav-options li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}   
+
+.nav-options li a:focus,
+.nav-options li a:hover {
+    background-color: #643a79;
+    border-radius: 10px;
+}
+
+.sticky {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+li a {
+    color: #efe8f2;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.services {
+    width: 100%;
+    height: 750px;
+    background-color: #17c2a4;
+}
