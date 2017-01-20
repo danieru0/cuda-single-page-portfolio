@@ -7,6 +7,7 @@ header {
     width: 100%;
     height: 600px;
     background-color: #87509c;
+    position: relative;
 }
 
 nav {
@@ -29,7 +30,7 @@ li {
 .nav-options {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 7px;
 }
 
 .nav-options li a {
@@ -50,6 +51,29 @@ li {
     left: 0;
     right: 0;
     top: 0;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5px;
+}
+
+.sticky .nav-options li a:focus,
+.sticky .nav-options li a:hover {
+    background-color: #000000;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #d3d3d3;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
 }
 
 li a {
@@ -64,4 +88,39 @@ li a {
     width: 100%;
     height: 750px;
     background-color: #17c2a4;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content p {
+    font-size: 42px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    color: #f7f3ea;
+    width: 910px;
+    text-align: center;
+}
+
+.header-content button {
+    background-color: #eb7d4b;
+    font-family: 'Titillium Web', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 25px 100px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.header-content button:focus,
+.header-content button:hover {
+    background-color: #da6c3a;
+    cursor: pointer;
 }
