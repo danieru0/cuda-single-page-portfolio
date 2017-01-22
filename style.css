@@ -182,12 +182,6 @@ header {
     }
 }
 
-.services {
-    width: 100%;
-    height: 750px;
-    background-color: #17c2a4;
-}
-
 @media only screen and (max-width: 498px) {
     .header-content p {
         font-size: 30px;
@@ -199,5 +193,90 @@ header {
         padding: 0;
         width: 80%;
         height: 70px;
+    }
+}
+
+.services {
+    width: 100%;
+    min-height: 750px;
+    background-color: #17c2a4;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    position: relative;
+}
+
+.services-container h2 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.services-container h2::after {
+    content: "";
+    border: 3px solid #14a58c;
+    display: block;
+    width: 90px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+
+.services-container p {
+    margin-top: -5px;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+    width: 590px;
+    text-align: center;
+}
+
+.services-container-blocks {
+    margin-top: 60px;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.services-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-block img {
+    padding-bottom: 20px;
+}
+
+.services-block h3 {
+    font-size: 24px;
+    color: #ffffff;
+    font-family: 'Titillium Web', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.services-block p {
+    width: 230px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: lighter;
+}
+
+@media only screen and (max-width: 606px) {
+    .services-container p {
+        width: 100%;
     }
 }
