@@ -213,10 +213,53 @@
             </div>
         </section>
         <section class="portfolio">
+            <div class="portfolio-container">
+                <h2>Portfolio</h2>
+                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
+                consectetur, adipisci velit, sed quia non numquam</p>
+                <ul class="simplefilter">
+                    <li class="active" data-filter="all">ALL</li>
+                    <li data-filter="1">WEB</li>
+                    <li data-filter="2">APPS</li>
+                    <li data-filter="3">ICONS</li>
+                </ul>
+            </div>
+            <div class="filter">
+                <div class="filtr-container">
+                    <div class="filtr-item" data-category="1" data-sort="value">
+                        <img src="img/img-05.png">
+                        <p>Isometric Perspective Mock-Up</p>
+                    </div>
+                    <div class="filtr-item" data-category="2" data-sort="value">
+                        <img src="img/img-06.png">
+                        <p>Time Zone App UI</p>
+                    </div>
+                    <div class="filtr-item" data-category="1" data-sort="value">
+                        <img src="img/img-07.png">
+                        <p>Viro Media Players UI</p>
+                    </div>
+                    <div class="filtr-item" data-category="3" data-sort="value">
+                        <img src="img/img-08.png">
+                        <p>Blog / Magazine Flat UI Kit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-container">
+                <button class="button-portfolio">Load more projects</button>
+            </div>
+        </section>
+        <section class="testimonials">
             
         </section>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Knob/1.2.13/jquery.knob.min.js"></script>
+        <script src="js/jquery.filterizr.js"></script>
+        <script src="js/controls.js"></script>
+        <script type="text/javascript">
+            $(function () {
+                $('.filtr-container').filterizr(); 
+            });
+        </script>
         <script src="js/main.js"></script>
         <script src="js/smoothscroll.js"></script>
 	</body>
