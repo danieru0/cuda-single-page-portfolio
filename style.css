@@ -696,7 +696,7 @@ header {
     font-weight: 200;
 }
 
-.testimonials-block blockquote p:first-child {
+.testimonials-block blockquote cite {
     font-style: normal;
     text-transform: uppercase;
     font-weight: 600;
@@ -704,13 +704,12 @@ header {
     padding-top: 10px;
 }
 
-.testimonials-block blockquote p:last-child {
+.testimonials-block blockquote p {
     font-size: 18px;
     font-style: normal;
     text-align: left;
     color: #ffdd99;
-    position: absolute;
-    bottom: 5px;
+    padding-top: 5px;
 }
 
 @media only screen and (max-width: 1519px) {
