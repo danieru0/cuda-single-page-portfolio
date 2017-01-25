@@ -36,16 +36,19 @@ header {
     list-style: none;
     position: relative;
     float: right;
+    padding-right: 15px;
 }
 
 .nav img {
     position: relative;
-    top: 10px;
+    top: 15px;
+    left: 25px;
 }
 
 .navbar li {
     display: inline-block;
     margin-left: 25px;
+    margin-top: 7px
 }
 
 .navbar li a {
@@ -105,7 +108,7 @@ header {
     }
 }
 
-@media only screen and (max-width: 681px) {
+@media only screen and (max-width: 696px) {
     .hamburger {
         display: block;
         right: 25px;
