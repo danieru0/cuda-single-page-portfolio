@@ -508,12 +508,12 @@ header {
     width: 570px;
 }
 
-.simplefilter {
+.controls {
     padding: 0;
     margin-bottom: 50px;
 }
 
-.simplefilter li {
+.controls button {
     display: inline-block;
     font-size: 18px;
     font-family: 'Titillium Web', sans-serif;
@@ -523,28 +523,36 @@ header {
     border-radius: 5px;
     background-color: #ebc985;
     margin-left: 5px;
+    border: none;
 }
 
-.simplefilter a {
-    text-decoration: none;
-    color: #393939;
-}
-
-.simplefilter li.active {
+.controls button.active {
     background-color: #ffffff;
 }
 
-.filter {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1130px;
-    position: relative;
-    bottom: 50px;
-    padding-bottom: 100px;
+.controls button:focus,
+.controls button:hover {
+    background-color: #dab874;
 }
 
-.filtr-item p {
-    padding-top: 15px;
+.controls button.active:focus,
+.controls button.active:hover {
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+    padding-bottom: 150px;
+}
+
+.mix p {
+    padding-top: 40px;
+    padding-bottom: 30px;
     font-size: 24px;
     text-align: center;
     font-family: 'Titillium Web', sans-serif;
@@ -552,12 +560,7 @@ header {
     text-transform: uppercase;
     position: relative;
     bottom: 20px;
-}
-
-.filtr-item img {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 50px;
+    font-weight: 200;
 }
 
 .button-portfolio {
@@ -583,14 +586,8 @@ header {
     background-color: #06b1a3;
 }
 
-@media only screen and (max-width: 1146px) {
-    .filter {
-        width: 550px;
-    }
-}
-
 @media only screen and (max-width: 586px) {
-    .filtr-item img {
+    .mix img {
         width: 95%;
         height: 100%;
         padding: 0;
@@ -601,27 +598,24 @@ header {
         width: 100%;
     }
     
-    .filter {
+    .container {
         width: 100%;
-    }
-    
-    .simplefilter {
-        padding-bottom: 30px;
     }
     
 }
 
 @media only screen and (max-width: 404px) {
-    .simplefilter {
+    .controls {
         width: 80%;
         padding-bottom: 30px;
     }
     
-    .simplefilter li {
+    .controls button {
         margin-bottom: 10px;
         display: block;
         text-align: center;
-        padding: 10px
+        padding: 10px;
+        width: 100%;
     }
 }
 
