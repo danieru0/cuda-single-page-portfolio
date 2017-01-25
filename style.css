@@ -90,6 +90,7 @@ header {
     z-index: 1;
     background-color: rgba(0,0,0,0.8);
     border-radius: 5px;
+    padding-bottom: 1px;
 }
 
 .sticky .navbar li a:focus,
